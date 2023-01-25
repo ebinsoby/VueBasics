@@ -1,16 +1,15 @@
 
 <template>
-  <h1>{{ message }}</h1>
+  <greetings></greetings>
 </template>
 
 <script>
+import Greetings from './components/Greetings.vue'
 export default {
   name: "random App",
-  data() {
-    return {
-      message: "AlertDriving",
-    };
-  },
+  components:{
+    Greetings: Greetings
+  }
 };
 </script>
  
